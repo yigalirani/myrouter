@@ -1,6 +1,6 @@
 {
   "name": "myrouter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "lightweight router for node",
   "main": "myrouter.js",
   "scripts": {
