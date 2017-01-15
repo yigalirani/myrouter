@@ -101,10 +101,10 @@ function Router(user_config){
     var controller=null;
 
     function error_cb(message){
-        return function(req,res){
-            res.statusCode = 200;
-            res.setHeader('Content-Type', 'text/html');
-			res.end(message);
+        return function(p){
+            p.res.statusCode = 200;
+            p.res.setHeader('Content-Type', 'text/html');
+            p.res.end(message);
 		};
     }
 	function calc_params(req,config){
